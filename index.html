@@ -33,7 +33,7 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Carousel</a>
+            <img class="logo-small" src="logo.jpeg" alt="PETIT">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,24 +42,13 @@
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
               </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
             </div>
           </div>
         </nav>
       </header>
       
       <main>
-      
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -68,13 +57,14 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
+                <img src="blender.png" class="d-block w-100" alt="Blender">
               <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
       
               <div class="container">
                 <div class="carousel-caption text-start">
-                  <h1>Example headline.</h1>
-                  <p>Some representative placeholder content for the first slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                  <h1>Modelagem 3D</h1>
+                  <p>Desenvolvimento de modelos 3D utilizando Blender</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Ver modelos</a></p>
                 </div>
               </div>
             </div>
@@ -91,7 +81,7 @@
             </div>
             <div class="carousel-item">
               <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-      
+
               <div class="container">
                 <div class="carousel-caption text-end">
                   <h1>One more for good measure.</h1>
@@ -121,25 +111,15 @@
           <!-- Three columns of text below the carousel -->
           <div class="row">
             <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      
-              <h2>Heading</h2>
-              <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+             
+              <img class="rounded-circle" src="arthur.jfif" width="140" height="140">
+              <h4>Arthur Morais Pimentel</h4>
+              <p>Cursando Engenharia de Computação 6º período</p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      
-              <h2>Heading</h2>
-              <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      
-              <h2>Heading</h2>
-              <p>And lastly this, the third column of representative placeholder content.</p>
-              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              <img class="rounded-circle" src="luiz.jpeg" width="140" height="140">
+              <h4>Luiz Eduardo Langkammer Murta</h4>
+              <p>Cursando Engenharia de Computação 6º período</p>
             </div><!-- /.col-lg-4 -->
           </div><!-- /.row -->
       
@@ -150,8 +130,8 @@
       
           <div class="row featurette">
             <div class="col-md-7">
-              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-              <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+              <h2 class="featurette-heading">Reunião para apresetanção dos projetos <span class="text-muted">25/06/2021</span></h2>
+              <p class="lead">Uma vez determinada as funções a reunião foi marcada para explanação inicial sobre as ideias propostas de cada projeto</p>
             </div>
             <div class="col-md-5">
               <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
@@ -198,5 +178,6 @@
           <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
       </main>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
