@@ -96,9 +96,6 @@ body {
   -------------------------------------------------- */
 
   .logo-small{
-    border-radius: 8px;
-    border-style: solid;
-    border-color: rgb(72, 73, 73);
     width: 170px;
     height: 55px;
   }
