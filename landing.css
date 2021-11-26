@@ -108,3 +108,9 @@ body {
  .projects-container a{
    text-decoration: none;
  }
+
+ .bkg-text{
+   padding: 12px 25px;
+   background: #5a5a5aea;
+   border-radius: 8px;
+ }
