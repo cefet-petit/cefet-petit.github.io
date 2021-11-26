@@ -114,3 +114,18 @@ body {
    background: #5a5a5aea;
    border-radius: 8px;
  }
+
+ .clean-link{
+   color: #5a5a5a;
+   text-decoration: none;
+ }
+
+ .footer{
+   text-align: center;
+   justify-content: center;
+ }
+
+ .footer-img{
+   width:110px;
+   height:90px;
+ }
