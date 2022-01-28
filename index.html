@@ -1,267 +1,408 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PETIT</title>
+    <link
+      rel="icon"
+      href="./src/images/logo/isotipo/isotipo.jpeg"
+      type="image/x-icon"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PETIT</title>
-  <link rel="icon" href="./src/images/logo/isotipo/isotipo.jpeg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
       }
-    }
-  </style>
 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
-  <!-- Custom styles for this template -->
-  <link href="landing.css" rel="stylesheet">
-</head>
+    <!-- Custom styles for this template -->
+    <link href="landing.css" rel="stylesheet" />
+  </head>
 
-<body>
-  <!--Cabeçalho com rolagem fixa no site-->
-  <header>
-    <nav class="navbar navbar-expand-md fixed-top bg-white">
-      <div class="container-fluid">
-        <a href="#"><img class="logo-small" src="./src/images/logo/logo.jpeg" alt="PETIT"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <body>
+    <!--Cabeçalho com rolagem fixa no site-->
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top bg-white">
+        <div class="container-fluid">
+          <a href="#"
+            ><img
+              class="logo-small"
+              src="./src/images/logo/logo.jpeg"
+              alt="PETIT"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--Carrousel-->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!--Item do carrousel-->
+          <div class="carousel-item active">
+            <img
+              src="./src/images/posts/blender.png"
+              class="d-block w-100"
+              alt="Blender"
+            />
+            <div class="container">
+              <div class="carousel-caption text-start bkg-text">
+                <h1>Modelagem 3D</h1>
+                <p>Desenvolvimento de modelos 3D utilizando Blender</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Ver modelos</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Item do carrousel-->
+          <div class="carousel-item">
+            <img
+              src="./src/images/posts/científico.jpg"
+              class="d-block w-100"
+              alt="Blender"
+            />
+            <div class="container">
+              <div class="carousel-caption bkg-text">
+                <h1>Inciação a pesquisa</h1>
+                <p>
+                  Realização de eventos para o estimulo do estudo na área
+                  metalurgica
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Ver projeto</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Item do carrousel-->
+          <div class="carousel-item">
+            <img
+              src="./src/images/posts/robotica.jpg"
+              class="d-block w-100"
+              alt="Blender"
+            />
+            <div class="container">
+              <div class="carousel-caption text-end bkg-text">
+                <h1>Robótica</h1>
+                <p>Incentivo aos estudantes a conhecerem a área da robótica</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#">Ver projeto</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </nav>
-  </header>
 
-  <main>
-    <!--Carrousel-->
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      
-      <div class="carousel-inner">
-        <!--Item do carrousel-->
-        <div class="carousel-item active">
-          <img src="./src/images/posts/blender.png" class="d-block w-100" alt="Blender">
-          <div class="container">
-            <div class="carousel-caption text-start bkg-text">
-              <h1>Modelagem 3D</h1>
-              <p>Desenvolvimento de modelos 3D utilizando Blender</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Ver modelos</a></p>
+      <div class="container marketing">
+        <!--O que é PETIT-->
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">O que é o PETIT?</h2>
+            <div class="about-container">
+              <p class="lead">A sigla PETIT significa:</p>
+              <p class="lead">
+                Programa de Educação Tutorial Interdisciplinar de Timóteo-MG.
+              </p>
+              <p class="lead">
+                É um programa do Governo Federal brasileiro de estímulo a
+                atividades de pesquisa, ensino e extensão universitárias, no
+                nível de graduação
+              </p>
             </div>
           </div>
-        </div>
-        <!--Item do carrousel-->
-        <div class="carousel-item">
-          <img src="./src/images/posts/científico.jpg" class="d-block w-100" alt="Blender">
-          <div class="container">
-            <div class="carousel-caption bkg-text">
-              <h1>Inciação a pesquisa</h1>
-              <p>Realização de eventos para o estimulo do estudo na área metalurgica</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Ver projeto</a></p>
-            </div>
+          <div class="col-md-5">
+            <img
+              class=""
+              src="./src/images/posts/cefet.jpg"
+              width="600"
+              height="500"
+            />
           </div>
         </div>
-        <!--Item do carrousel-->
-        <div class="carousel-item">
-          <img src="./src/images/posts/robotica.jpg" class="d-block w-100" alt="Blender">
-          <div class="container">
-            <div class="carousel-caption text-end bkg-text">
-              <h1>Robótica</h1>
-              <p>Incentivo aos estudantes a conhecerem a área da robótica</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Ver projeto</a></p>
-            </div>
+
+        <hr class="featurette-divider" />
+
+        <!-- Membros -->
+        <div class="row">
+          <h2 class="p-5 text-center">Membros</h2>
+          <!--Membro 1-->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Arthur.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Arthur Morais Pimentel</h5>
+          </div>
+          <!--Membro 2-->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Esther.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Esther Magalhães</h5>
+          </div>
+          <!--Membro 3-->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Gerson.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Gerson Braga</h5>
+          </div>
+          <!--Membro 4-->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Guilherme.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Guilherme Catarino</h5>
+          </div>
+          <!--Membro 5-->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Lucas.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Lucas Araújo</h5>
+          </div>
+          <!--Membro 6-->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/luiz.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Luiz Eduardo Langkammer Murta</h5>
+          </div>
+          <!--Membro 7-->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Maísa.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Maísa Sousa</h5>
+          </div>
+          <!--Membro 8-->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Thales.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Thales Harvey</h5>
           </div>
         </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
+        <hr class="featurette-divider" />
 
-    
-
-
-    <div class="container marketing">
-
-      <!--O que é PETIT-->
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">O que é o PETIT? </h2>
-          <div class="about-container">
-            <p class="lead ">A sigla PETIT significa:</p>
-            <p class="lead">Programa de Educação Tutorial Interdisciplinar de Timóteo-MG.</p>
-            <p class="lead">É um programa do Governo Federal brasileiro de estímulo a atividades de pesquisa, ensino e extensão universitárias, no nível de graduação</p>
+        <!-- Tutores -->
+        <div class="row">
+          <h2 class="p-5 text-center">Tutores</h2>
+          <!-- Tutor 1 -->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Carlos.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Carlos Frederico Campos De Assis</h5>
+            <p></p>
+          </div>
+          <!-- Tutor 2 -->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Daniel.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Daniel Leandro Rocco</h5>
+            <p></p>
+          </div>
+          <!-- Tutor 3 -->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/JoaoBatista.png"
+              width="100"
+              height="100"
+            />
+            <h5>João Batista Queiroz Zuliani</h5>
+            <p></p>
+          </div>
+          <!-- Tutor 4 -->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Chaib.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>João Paulo M. De Castro Chaib</h5>
+            <p></p>
+          </div>
+          <!-- Tutor 5 -->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Jozelmo.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>José Jozelmo Grangeiro Vieira</h5>
+            <p></p>
+          </div>
+          <!-- Tutor 6 -->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Leonel.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Leonel Muniz Meireles</h5>
+            <p></p>
+          </div>
+          <!-- Tutor 7 -->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Mirela.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Mirela De Castro Santos</h5>
+            <p></p>
+          </div>
+          <!-- Tutor 8 -->
+          <div class="col-lg-3">
+            <img
+              class="rounded-circle"
+              src="./src/images/perfil/Odilon.jpeg"
+              width="100"
+              height="100"
+            />
+            <h5>Odilon Correa Da Silva</h5>
+            <p></p>
           </div>
         </div>
-        <div class="col-md-5">
-          <img class="" src="./src/images/posts/cefet.jpg" width="600" height="500">
-        </div>
-      </div>
 
-      <hr class="featurette-divider">
+        <!-- Posts -->
 
-      <!-- Membros -->
-      <div class="row">
-        <h2 class="p-5 text-center">Membros</h2>
-        <!--Membro 1-->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Arthur.jpeg" width="100" height="100">
-          <h5>Arthur Morais Pimentel</h5>
-        </div>
-        <!--Membro 2-->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Esther.jpeg" width="100" height="100">
-          <h5>Esther Magalhães</h5>
-        </div>
-        <!--Membro 3-->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Gerson.jpeg" width="100" height="100">
-          <h5>Gerson Braga</h5>
-        </div>
-         <!--Membro 4-->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Guilherme.jpeg" width="100" height="100">
-          <h5>Guilherme Catarino</h5>
-        </div>
-        <!--Membro 5-->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Lucas.jpeg" width="100" height="100">
-          <h5>Lucas Araújo</h5>
-        </div>
-        <!--Membro 6-->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/luiz.jpeg" width="100" height="100">
-          <h5>Luiz Eduardo Langkammer Murta</h5>
-        </div>
-        <!--Membro 7-->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Maísa.jpeg" width="100" height="100">
-          <h5>Maísa Sousa</h5>
-        </div>
-         <!--Membro 8-->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Thales.jpeg" width="100" height="100">
-          <h5>Thales Harvey</h5>
+        <hr class="featurette-divider" />
+
+        <!--Nossos projetos-->
+        <div class="row featurette projects-container">
+          <h2 class="featurette-heading">Nossos Projetos</h2>
+          <div class="card col-5 m-3 p-3">
+            <a href="#"> Modelagem 3D </a>
+          </div>
+          <div class="card col-5 m-3 p-3">
+            <a href="#"> Experimentos de física </a>
+          </div>
+          <div class="card col-5 m-3 p-3">
+            <a href="#"> Robótica </a>
+          </div>
+          <div class="card col-5 m-3 p-3">
+            <a href="#"> Metodologias ativas de ensino </a>
+          </div>
         </div>
 
-      </div>
-      
-      <hr class="featurette-divider">
-
-      <!-- Tutores -->
-      <div class="row">
-        <h2 class="p-5 text-center">Tutores</h2>
-        <!-- Tutor 1 -->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Carlos.jpeg" width="100" height="100">
-          <h5>Carlos Frederico Campos De Assis</h5>
-          <p></p>
-        </div>
-        <!-- Tutor 2 -->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Daniel.jpeg" width="100" height="100">
-          <h5>Daniel Leandro Rocco</h5>
-          <p></p>
-        </div>
-        <!-- Tutor 3 -->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/JoaoBatista.png" width="100" height="100">
-          <h5>João Batista Queiroz Zuliani</h5>
-          <p></p>
-        </div>
-        <!-- Tutor 4 -->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Chaib.jpeg" width="100" height="100">
-          <h5>João Paulo M. De Castro Chaib</h5>
-          <p></p>
-        </div>
-        <!-- Tutor 5 -->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Jozelmo.jpeg" width="100" height="100">
-          <h5>José Jozelmo Grangeiro Vieira</h5>
-          <p></p>
-        </div>
-        <!-- Tutor 6 -->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Leonel.jpeg" width="100" height="100">
-          <h5>Leonel Muniz Meireles</h5>
-          <p></p>
-        </div>
-         <!-- Tutor 7 -->
-         <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Mirela.jpeg" width="100" height="100">
-          <h5>Mirela De Castro Santos</h5>
-          <p></p>
-        </div>
-        <!-- Tutor 8 -->
-        <div class="col-lg-3">
-          <img class="rounded-circle" src="./src/images/perfil/Odilon.jpeg" width="100" height="100">
-          <h5>Odilon Correa Da Silva</h5>
-          <p></p>
-        </div>
-      </div>
-
-
-      <!-- Posts -->
-
-      <hr class="featurette-divider">
-      
-      <!--Nossos projetos-->
-      <div class="row featurette projects-container">
-        <h2 class="featurette-heading">Nossos Projetos</h2>
-        <div class="card col-5 m-3 p-3">
-          <a href='#'>
-            Modelagem 3D
-          </a>
-        </div>
-        <div class="card col-5 m-3 p-3">
-          <a href='#'>
-            Experimentos de física
-          </a>
-        </div>
-        <div class="card col-5 m-3 p-3">
-          <a href='#'>
-            Robótica
-          </a>
-        </div>
-        <div class="card col-5 m-3 p-3">
-          <a href='#'>
-            Metodologias ativas de ensino
-          </a>
-        </div>
-      </div>
-
-     
-
-      <!--Post 2-->
-      <!-- <div class="row featurette">
+        <!--Post 2-->
+        <!-- <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
           <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
@@ -279,25 +420,31 @@
         </div>
       </div> -->
 
-      <hr class="featurette-divider">
-     
+        <hr class="featurette-divider" />
+      </div>
 
-    </div>
-
-    
-
-    <!-- FOOTER -->
-    <footer class="row footer">
-      <p><a class="clean-link" href="https://www.instagram.com/petit.cefemg/" target="blank"><i class="bi bi-instagram"></i>  @petit.ceftmg</a></p>
-      <p><i class="bi bi-envelope"></i>  pet.cefet.timoteo@hotmail.com</p>
-      <img class="footer-img" src="./src/images/logo/isotipo/isotipo.jpeg" alt="PETIT">
-    </footer>
-
-    
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-</body>
-
+      <!-- FOOTER -->
+      <footer class="row footer">
+        <p>
+          <a
+            class="clean-link"
+            href="https://www.instagram.com/petit.cefet//"
+            target="blank"
+            ><i class="bi bi-instagram"></i> @petit.cefet</a
+          >
+        </p>
+        <p><i class="bi bi-envelope"></i> pet.cefet.timoteo@gmail.com</p>
+        <img
+          class="footer-img"
+          src="./src/images/logo/isotipo/isotipo.jpeg"
+          alt="PETIT"
+        />
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
