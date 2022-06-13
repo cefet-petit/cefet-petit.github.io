@@ -1,0 +1,16 @@
+.feature{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text{
+    margin-right: 0.3fr;
+}
+
+.carrousel{
+    margin-left: 0.3fr;
+}
+
+.content{
+    text-align: justify;
+}
